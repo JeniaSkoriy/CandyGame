@@ -3,9 +3,9 @@ package hw2;
 public class Card {
 
     private Face face;
-    boolean isDouble;
+    private boolean isDouble;
 
-    Card(Face face, boolean isDouble) {
+    public Card(Face face, boolean isDouble) {
         this.face = face;
         this.isDouble = isDouble;
     }
@@ -14,17 +14,12 @@ public class Card {
         return face;
     }
 
-    public String isDoubled() {
-//////
-        if (isDouble) {
-            return "double" + getFace();
-        } else {
-            return getFace() + "";
-        }
+    public boolean isDoubled() {
+        return isDouble;
     }
 
     @Override
     public String toString() {
-        return isDoubled();
+        return (isDoubled() ? " double" : "") + face.toString();
     }
 }
