@@ -2,9 +2,10 @@ package hw2;
 
 public class Player {
 
+    private static final int INITIAL_POSITION = -1;
+
     private String name;
     private int position;
-    static final int INITIAL_POSITION = -1;
 
     Player(String name) {
         this.name = name;
@@ -21,6 +22,11 @@ public class Player {
 
     public void setPosition(int newPosition) {
         this.position = newPosition;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 
 }
