@@ -5,8 +5,6 @@ import static hw2.Face.*;
 class Board {
 // constants
 
-    static final int INITIAL_POSITION = -1;
-
 // based on the picture at: http://www.lscheffer.com/CandyLand-big.jpg
     private final Face[] board = {RED, PURPLE, YELLOW, BLUE, ORANGE, GREEN, RED, PURPLE, PLUMPY, YELLOW,
         BLUE, ORANGE, GREEN, RED, PURPLE, YELLOW, BLUE, MR_MINT, ORANGE, GREEN,
